@@ -21,7 +21,7 @@
 #  - X clipboard handling if xsel(1) or xclip(1) is available (see
 #    note below).
 # 
-# addionnaly, if you are using xterm and don't want to use the mouse
+# additionally, if you are using xterm and don't want to use the mouse
 # tracking system, you can map some button click events so that they
 # send \E[M<bt>^X[<y><x> where <bt> is the character 0x20 + (0, 1, 2)
 # <x>,<y> are the coordinate of the mouse pointer. This is usually done
@@ -91,14 +91,14 @@
 #   xclip(1) or xsel(1) command is available, that text is put on the
 #   clipboard.
 #
-# If xsel or xlip is available, and $DISPLAY is set (and you're in a
+# If xsel or xclip is available, and $DISPLAY is set (and you're in a
 # xterm-like terminal (even though that feature is terminal
-# independant)), all the keys (actually widgets) that deal with zsh
+# independent)), all the keys (actually widgets) that deal with zsh
 # cut buffer have been modified so that the X CLIPBOARD selection is
 # used. So <Ctrl-U>, <Ctrl-W>... will put the killed region on the X
 # clipboard. vi mode "p" or emacs "<Ctrl-Y>" will paste the X CLIPBOARD
 # selection. Only the keys that delete one character are not affected
-# (<Del>, <Backspace>, <x>). Additionnaly, the primary selection (what
+# (<Del>, <Backspace>, <x>). Additionally, the primary selection (what
 # is mouse highlighted and that you paste with the middle button) is put
 # on the clipboard (and so made available to zsh) when you press
 # <Meta-Insert> or <Ctrl-Insert> or <Ctrl-X>X (emacs mode) or X (vicmd
@@ -129,7 +129,7 @@
 # bugs:
 #   - the GPM support was not much tested (was tested with gpm 1.19.6 on
 #     a linux 2.6.9, AMD Athlon)
-#   - mouse positionning doesn't work properly in "vared" if a prompt
+#   - mouse positioning doesn't work properly in "vared" if a prompt
 #     was provided (vared -p <prompt>)
 #
 # Todo:
@@ -141,7 +141,7 @@
 #
 # Changes:
 #  v1.6 2011-09-15: added Copyright and License notice, no code change
-#  v1.5 2005-03-12: bug fixes (GPM now works again), xclip prefered over
+#  v1.5 2005-03-12: bug fixes (GPM now works again), xclip preferred over
 #       xsel as xsel is bogus.
 #  v1.4 2005-03-01: <Ctrl-W><Ctrl-W> puts both words on the cut buffer
 #       support for CUT_BUFFER0 via xprop.
